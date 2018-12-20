@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">社外利用履歴</string>
+    <string-array name="purpose">
+        <item>目的を選択してください</item>
+        <item>重役会議</item>
+        <item>連絡会議</item>
+        <item>スケジューリング会議</item>
+        <item>アイデア出し会議</item>
+        <item>問題解決会議</item>
+        <item>問題発見会議</item>
+        <item>コーチング会議</item>
+        <item>プレゼンテーション</item>
+        <item>研修・セミナー</item>
+        <item>各種社内イベント</item>
+        <item>会社説明会</item>
+        <item>筆記試験</item>
+        <item>面接</item>
+        <item>営業</item>
+        <item>打ち合わせ</item>
+    </string-array>
+
+    <string-array name="daterange">
+        <item>月を選択してください</item>
+        <item>2018年4月</item>
+        <item>2018年5月</item>
+        <item>2018年6月</item>
+        <item>2018年7月</item>
+        <item>2018年8月</item>
+        <item>2018年9月</item>
+    </string-array>
+
+
+
+</resources>

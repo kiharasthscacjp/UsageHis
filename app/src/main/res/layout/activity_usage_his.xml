@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsageHisActivity">
+
+    <LinearLayout
+        android:id="@+id/usageHis_linear_lo_searcher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF8800"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/usageHis_gline_boundary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/usageHis_spinar_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/borderspinner"
+            android:entries="@array/purpose"
+            app:layout_constraintBottom_toTopOf="@+id/usageHis_spinar_month"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/usageHis_spinar_month"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/borderspinner"
+            android:entries="@array/daterange"
+            app:layout_constraintBottom_toTopOf="@+id/usageHis_sach_vi_company"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usageHis_spinar_purpose" />
+
+        <SearchView
+            android:id="@+id/usageHis_sach_vi_company"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border_line"
+            android:iconifiedByDefault="false"
+            android:queryHint="企業名を入力してください" />
+
+        <SearchView
+            android:id="@+id/usageHis_sach_vi_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border_line"
+            android:iconifiedByDefault="false"
+            android:queryHint="参加者名を入力してください" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/usageHis_list_vi_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usageHis_gline_boundary"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/usageHis_gline_boundary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+</android.support.constraint.ConstraintLayout>
